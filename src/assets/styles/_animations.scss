@@ -1,0 +1,29 @@
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce-resize {
+	from {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.15);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}

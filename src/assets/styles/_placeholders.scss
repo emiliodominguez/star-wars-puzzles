@@ -1,0 +1,22 @@
+$ancho-scrollbar: 4px;
+$alto-scrollbar: 4px;
+
+%custom-scrollbar {
+	&::-webkit-scrollbar {
+		width: $ancho-scrollbar;
+		height: $alto-scrollbar;
+
+		&-thumb {
+			background-color: rgba($gris-medio, 0.5);
+			border-radius: 5px;
+
+			&:hover {
+				background-color: lighten($gris-medio, 10%);
+			}
+		}
+
+		&-track {
+			background-color: transparent;
+		}
+	}
+}

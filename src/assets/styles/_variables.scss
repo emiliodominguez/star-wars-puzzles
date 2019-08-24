@@ -1,0 +1,34 @@
+// Fuentes
+// =======================
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+$fuente-body: 'Poppins', sans-serif;
+$fuente-headings: 'Ubuntu', sans-serif;
+
+// Colores
+// =======================
+$primario: #FF3F10;
+$secundario: #2C4454;
+
+$peligro: #FCC302;
+$exito: #1D9114;
+$error: #FF0000;
+
+// Grises
+// =======================
+$gris-oscuro: #222;
+$gris-medio: #999;
+$gris-claro: #D3D3D3;
+
+// Media Queries
+// =======================
+$max-width-sm: "(max-width: 575px)";
+$max-width-md: "(max-width: 767px)";
+$max-width-lg: "(max-width: 991px)";
+
+// Bootstrap media queries
+$min-width-sm: "(min-width: 576px)";
+$min-width-md: "(min-width: 768px)";
+$min-width-lg: "(min-width: 992px)";
+$min-width-xl: "(min-width: 1200px)";

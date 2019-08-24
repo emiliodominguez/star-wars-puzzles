@@ -1,0 +1,65 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/animations';
+@import '../../../assets/styles/placeholders';
+
+.puzzle-toggle {
+	max-height: 25px;
+	position: fixed;
+	top: 20px;
+	left: 5px;
+	fill: #c3c3c3;
+	transition: transform ease-in 250ms;
+	z-index: 2;
+    cursor: pointer;
+
+    &:hover {
+        fill: #444;
+    }
+
+    &.rotated {
+		transform-origin: center;
+        transform: rotateY(-180deg);
+    }
+}
+
+.puzzle-container {
+    position: fixed;
+	top: 0;
+	right: 0;
+    bottom: 0;
+	left: 0;
+	overflow-y: auto;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	animation: slide-right ease 250ms forwards;
+	z-index: 1;
+	@extend %custom-scrollbar;
+}
+
+ul {
+	display: grid;
+	grid-gap: 25px;
+	padding: 50px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	list-style: none;
+
+	li {
+		text-align: center;
+	}
+
+    img {
+		width: 100%;
+        transition: filter ease 250ms;
+        filter: grayscale(1);
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(0);
+		}
+    }
+}
