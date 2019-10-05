@@ -5,11 +5,13 @@ import { Component } from '@angular/core';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-	public title: string;
-	public puzzles: string[];
+export class AppComponent
+{
+	private title: string;
+	private puzzles: string[];
 
-	constructor() {
+	constructor()
+	{
 		this.title = 'Star Wars Puzzles';
 		this.puzzles = [
 			'luke',

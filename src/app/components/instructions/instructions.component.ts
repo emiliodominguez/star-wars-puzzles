@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class InstructionsComponent
 {
-	public instructions: string[];
+	private instructions: string[];
 
 	constructor()
 	{
@@ -17,7 +17,7 @@ export class InstructionsComponent
 		];
 	}
 
-	public toggleInstructions( language ): void
+	private toggleInstructions( language ): void
 	{
 		switch ( language ) {
 			case 'ES':

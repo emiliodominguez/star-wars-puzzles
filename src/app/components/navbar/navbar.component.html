@@ -1,14 +1,21 @@
-<svg height="50" viewBox="0 0 50 50" width="50"
-     class="puzzle-toggle" (click)="togglePuzzles()"
-     [ngClass]="{ 'rotated': puzzlesVisible }">
-	 <path d="M50 25c0 6.7-2.6 13-7.3 17.7S31.7 50 25 50s-13-2.6-17.7-7.3S0 31.7 0 25 2.6 12 7.3 7.3 18.3 0 25 0s13 2.6 17.7 7.3S50 18.3 50 25zM3.9 25c0 11.6 9.5 21.1 21.1 21.1S46.1 36.6 46.1 25 36.6 3.9 25 3.9 3.9 13.4 3.9 25zm17.8-13.5l-2.8 2.8L29.7 25 18.9 35.7l2.8 2.8L35.2 25 21.7 11.5z"/>
+<svg
+	height="50"
+	viewBox="0 0 50 50"
+	width="50"
+	class="puzzle-toggle"
+	(click)="togglePuzzles()"
+	[ngClass]="{ rotated: puzzlesVisible }"
+>
+	<path
+		d="M50 25c0 6.7-2.6 13-7.3 17.7S31.7 50 25 50s-13-2.6-17.7-7.3S0 31.7 0 25 2.6 12 7.3 7.3 18.3 0 25 0s13 2.6 17.7 7.3S50 18.3 50 25zM3.9 25c0 11.6 9.5 21.1 21.1 21.1S46.1 36.6 46.1 25 36.6 3.9 25 3.9 3.9 13.4 3.9 25zm17.8-13.5l-2.8 2.8L29.7 25 18.9 35.7l2.8 2.8L35.2 25 21.7 11.5z"
+	/>
 </svg>
 
 <div class="puzzle-container" *ngIf="puzzlesVisible">
 	<ul>
 		<li *ngFor="let puzzle of puzzles">
 			<a [routerLink]="['/', puzzle]" (click)="togglePuzzles()">
-				<img src="../../../assets/img/{{ puzzle }}/final.jpg">
+				<img src="../../../assets/img/{{ puzzle }}/final.jpg" />
 			</a>
 		</li>
 	</ul>
