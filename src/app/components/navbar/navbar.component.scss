@@ -1,6 +1,6 @@
-@import '../../../assets/styles/variables';
-@import '../../../assets/styles/animations';
-@import '../../../assets/styles/placeholders';
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/animations";
+@import "../../../assets/styles/placeholders";
 
 .puzzle-toggle {
 	max-height: 25px;
@@ -10,23 +10,23 @@
 	fill: #c3c3c3;
 	transition: transform ease-in 250ms;
 	z-index: 2;
-    cursor: pointer;
+	cursor: pointer;
 
-    &:hover {
-        fill: #444;
-    }
+	&:hover {
+		fill: #444;
+	}
 
-    &.rotated {
+	&.rotated {
 		transform-origin: center;
-        transform: rotateY(-180deg);
-    }
+		transform: rotateY(-180deg);
+	}
 }
 
 .puzzle-container {
-    position: fixed;
+	position: fixed;
 	top: 0;
 	right: 0;
-    bottom: 0;
+	bottom: 0;
 	left: 0;
 	overflow-y: auto;
 	width: 100vw;
@@ -41,25 +41,22 @@
 }
 
 ul {
+    max-height: 100%;
 	display: grid;
 	grid-gap: 25px;
-	padding: 50px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
 	align-items: center;
 	list-style: none;
+	margin: 50px;
 
-	li {
-		text-align: center;
-	}
-
-    img {
+	img {
 		width: 100%;
-        transition: filter ease 250ms;
-        filter: grayscale(1);
-        cursor: pointer;
+		transition: filter ease 250ms;
+		filter: grayscale(1);
+		cursor: pointer;
 
-        &:hover {
-            filter: grayscale(0);
+		&:hover {
+			filter: grayscale(0);
 		}
-    }
+	}
 }

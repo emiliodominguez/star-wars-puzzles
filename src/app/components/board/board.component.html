@@ -1,19 +1,14 @@
 <div class="puzzle" *ngIf="!puzzleSolved">
-    <img id="piece{{ piece }}"
-         class="puzzle-piece"
-         *ngFor="let piece of puzzlePieces"
-		 src="../../../assets/img/{{ puzzleCharacter }}/{{ piece }}.jpg">
+    <img id="piece{{ piece }}" class="puzzle-piece" *ngFor="let piece of puzzlePieces"
+        src="../../../assets/img/{{ puzzleCharacter }}/{{ piece }}.jpg">
 </div>
 
 <div class="direction-buttons" *ngIf="!puzzleSolved">
-    <button *ngFor="let keyCode of keyCodes | keyvalue"
-            class="{{ keyCode.key }}"
-            (click)="moveTo(keyCode.value)">
+    <button *ngFor="let keyCode of keyCodes | keyvalue" class="{{ keyCode.key }}" (click)="moveTo(keyCode.value)">
         {{ keyCode.key }}
     </button>
 </div>
 
-<h1 *ngIf="puzzleSolved"
-	class="winning-message">
-	Puzzle resuelto
-</h1>
+<div *ngIf="puzzleSolved" class="winning-message">
+    <img class="puzzle-piece" src="../../../assets/img/{{ puzzleCharacter }}/final.jpg">
+</div>
