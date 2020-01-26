@@ -1,6 +1,6 @@
-# Star Wars Puzzles [ [URL](https://emiliodominguez.github.io/star-wars-puzzles/ "URL al juego en GitHub Pages") ]
+# Star Wars Puzzles
 
----
+A project made in Angular for learning purposes...
 
 ## Screenshots
 
